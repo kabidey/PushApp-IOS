@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -66,6 +66,7 @@
 		7B303F4C7553FFE10AF0F08B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		B31BBCBF5AE9CA5EC6D75AC3 /* Pods_PushApp_IOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushApp_IOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		ECE33BD502227CD00805CD6A /* Pods-PushApp-IOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-PushApp-IOS_Example.release.xcconfig"; path = "Target Support Files/Pods-PushApp-IOS_Example/Pods-PushApp-IOS_Example.release.xcconfig"; sourceTree = "<group>"; };
+		F90591182E7FFF5500B7E345 /* DeliveryActivityExtension.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = DeliveryActivityExtension.entitlements; sourceTree = "<group>"; };
 		F9AB3C1F2E260B6500F9D6F1 /* MyApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyApp.swift; sourceTree = "<group>"; };
 		F9AB3C212E260B9500F9D6F1 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		F9AB3C232E260BE800F9D6F1 /* PushApp-IOS_Example.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = "PushApp-IOS_Example.entitlements"; sourceTree = "<group>"; };
@@ -76,21 +77,21 @@
 /* End PBXFileReference section */
 
 /* Begin PBXFileSystemSynchronizedBuildFileExceptionSet section */
-		F9AB3C302E260C1E00F9D6F1 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		F9AB3C302E260C1E00F9D6F1 /* Exceptions for "NotificationService" folder in "NotificationService" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
 			target = F9AB3C272E260C1E00F9D6F1 /* NotificationService */;
 		};
-		F9AB3C4F2E260C4900F9D6F1 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		F9AB3C4F2E260C4900F9D6F1 /* Exceptions for "DeliveryActivity" folder in "DeliveryActivityExtension" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				Info.plist,
 			);
 			target = F9AB3C382E260C4800F9D6F1 /* DeliveryActivityExtension */;
 		};
-		F9AB3C542E260CA500F9D6F1 /* PBXFileSystemSynchronizedBuildFileExceptionSet */ = {
+		F9AB3C542E260CA500F9D6F1 /* Exceptions for "DeliveryActivity" folder in "PushApp-IOS_Example" target */ = {
 			isa = PBXFileSystemSynchronizedBuildFileExceptionSet;
 			membershipExceptions = (
 				DeliveryActivityLiveActivity.swift,
@@ -100,8 +101,23 @@
 /* End PBXFileSystemSynchronizedBuildFileExceptionSet section */
 
 /* Begin PBXFileSystemSynchronizedRootGroup section */
-		F9AB3C292E260C1E00F9D6F1 /* NotificationService */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (F9AB3C302E260C1E00F9D6F1 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = NotificationService; sourceTree = "<group>"; };
-		F9AB3C3E2E260C4800F9D6F1 /* DeliveryActivity */ = {isa = PBXFileSystemSynchronizedRootGroup; exceptions = (F9AB3C542E260CA500F9D6F1 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, F9AB3C4F2E260C4900F9D6F1 /* PBXFileSystemSynchronizedBuildFileExceptionSet */, ); explicitFileTypes = {}; explicitFolders = (); path = DeliveryActivity; sourceTree = "<group>"; };
+		F9AB3C292E260C1E00F9D6F1 /* NotificationService */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F9AB3C302E260C1E00F9D6F1 /* Exceptions for "NotificationService" folder in "NotificationService" target */,
+			);
+			path = NotificationService;
+			sourceTree = "<group>";
+		};
+		F9AB3C3E2E260C4800F9D6F1 /* DeliveryActivity */ = {
+			isa = PBXFileSystemSynchronizedRootGroup;
+			exceptions = (
+				F9AB3C542E260CA500F9D6F1 /* Exceptions for "DeliveryActivity" folder in "PushApp-IOS_Example" target */,
+				F9AB3C4F2E260C4900F9D6F1 /* Exceptions for "DeliveryActivity" folder in "DeliveryActivityExtension" target */,
+			);
+			path = DeliveryActivity;
+			sourceTree = "<group>";
+		};
 /* End PBXFileSystemSynchronizedRootGroup section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -146,6 +162,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				F90591182E7FFF5500B7E345 /* DeliveryActivityExtension.entitlements */,
 				F9AB3C232E260BE800F9D6F1 /* PushApp-IOS_Example.entitlements */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACD21AFB9204008FA782 /* Example for PushApp-IOS */,
@@ -268,8 +285,6 @@
 				F9AB3C292E260C1E00F9D6F1 /* NotificationService */,
 			);
 			name = NotificationService;
-			packageProductDependencies = (
-			);
 			productName = NotificationService;
 			productReference = F9AB3C282E260C1E00F9D6F1 /* NotificationService.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -290,8 +305,6 @@
 				F9AB3C3E2E260C4800F9D6F1 /* DeliveryActivity */,
 			);
 			name = DeliveryActivityExtension;
-			packageProductDependencies = (
-			);
 			productName = DeliveryActivityExtension;
 			productReference = F9AB3C392E260C4800F9D6F1 /* DeliveryActivityExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
@@ -319,7 +332,6 @@
 				};
 			};
 			buildConfigurationList = 607FACCB1AFB9204008FA782 /* Build configuration list for PBXProject "PushApp-IOS" */;
-			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -328,6 +340,7 @@
 				Base,
 			);
 			mainGroup = 607FACC71AFB9204008FA782;
+			preferredProjectObjectVersion = 77;
 			productRefGroup = 607FACD11AFB9204008FA782 /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
@@ -370,13 +383,12 @@
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-PushApp-IOS_Example/Pods-PushApp-IOS_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/PushApp-IOS/PushApp_IOS.framework",
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PushApp-IOS_Example/Pods-PushApp-IOS_Example-frameworks-${CONFIGURATION}-input-files.xcfilelist",
 			);
 			name = "[CP] Embed Pods Frameworks";
-			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/PushApp_IOS.framework",
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-PushApp-IOS_Example/Pods-PushApp-IOS_Example-frameworks-${CONFIGURATION}-output-files.xcfilelist",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
@@ -554,13 +566,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "PushApp-IOS_Example.entitlements";
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 6CRFUK7DVC;
 				INFOPLIST_FILE = "PushApp-IOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.5;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = Mehery.ExampleAppPushapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -575,13 +589,15 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_ENTITLEMENTS = "PushApp-IOS_Example.entitlements";
+				CURRENT_PROJECT_VERSION = 5;
 				DEVELOPMENT_TEAM = 6CRFUK7DVC;
 				INFOPLIST_FILE = "PushApp-IOS/Info.plist";
-				IPHONEOS_DEPLOYMENT_TARGET = 18.2;
+				IPHONEOS_DEPLOYMENT_TARGET = 16.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
 				);
+				MARKETING_VERSION = 1.5;
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = Mehery.ExampleAppPushapp;
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -688,6 +704,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = DeliveryActivityExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEBUG_INFORMATION_FORMAT = dwarf;
@@ -733,6 +750,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_ENTITLEMENTS = DeliveryActivityExtension.entitlements;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_TEAM = 6CRFUK7DVC;

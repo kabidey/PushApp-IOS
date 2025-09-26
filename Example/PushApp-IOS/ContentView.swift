@@ -2,87 +2,136 @@ import SwiftUI
 import PushApp_IOS
 
 struct ContentView: View {
+    @State private var isLoggedIn: Bool = false
+
     var body: some View {
         NavigationView {
-            ScreenOne()
+            if isLoggedIn {
+                SecondScreen()
+            } else {
+                LoginScreen(isLoggedIn: $isLoggedIn)
+            }
         }
         .onAppear {
-            PushApp.shared.initialize(identifier: "demo$d7b9733c4d6b_1752491727304")
-            PushApp.shared.login(userId: "xyz")
-            PushApp.shared.sendEvent(eventName: "EVENT_LOGIN_SUCCESS", eventData: ["user_name": "xyz"])
+            // Initialize SDK
+            PushApp.shared.initialize(identifier: "demo$demo_1753805479315")
+
+            // Check persisted login
+            if let savedUserId = UserDefaults.standard.string(forKey: "pushapp_user_id") {
+//                PushApp.shared.login(userId: savedUserId)
+                isLoggedIn = true
+                PushApp.shared.sendEvent(eventName: "widget_open", eventData: ["compare": "center"])
+            }
         }
     }
 }
 
-struct ScreenOne: View {
-    var body: some View {
-        VStack {
-            Text("Screen One")
-                .font(.largeTitle)
-                .padding()
+// MARK: - Screen 1: Login
+struct LoginScreen: View {
+    @State private var domain: String = ""
+    @State private var username: String = ""
+    @State private var password: String = ""
+    @Binding var isLoggedIn: Bool
 
-            NavigationLink(destination: ScreenTwo()) {
-                Text("Go to Screen Two")
+    var body: some View {
+        VStack(spacing: 20) {
+            Text("Login")
+                .font(.largeTitle)
+                .padding(.bottom, 40)
+
+            TextField("Domain", text: $domain)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .autocapitalization(.none)
+
+            TextField("Username", text: $username)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+                .autocapitalization(.none)
+
+            SecureField("Password", text: $password)
+                .textFieldStyle(RoundedBorderTextFieldStyle())
+
+            Button(action: login) {
+                Text("Login")
                     .font(.title2)
+                    .frame(maxWidth: .infinity)
                     .padding()
                     .background(Color.blue)
                     .foregroundColor(.white)
                     .cornerRadius(10)
             }
+            .padding(.top, 20)
         }
-        .navigationTitle("One")
+        .padding()
         .trackPage(name: "ScreenOne")
     }
+
+    private func login() {
+        guard !username.isEmpty else { return }
+
+        // Call PushApp SDK login
+        PushApp.shared.login(userId: username)
+        PushApp.shared.sendEvent(eventName: "EVENT_LOGIN_SUCCESS", eventData: ["user_name": username])
+        
+        
+
+        // Save login for persistence
+        UserDefaults.standard.setValue(username, forKey: "pushapp_user_id")
+        isLoggedIn = true
+    }
 }
 
-struct ScreenTwo: View {
+// MARK: - Screen 2: Post-login Test
+// MARK: - Example SecondScreen
+struct SecondScreen: View {
     var body: some View {
-        VStack {
-            Text("Screen Two")
-                .font(.largeTitle)
-                .padding()
+        GeometryReader { geo in
+            ZStack {
+                Color.white.ignoresSafeArea()
 
-            NavigationLink(destination: ScreenThree()) {
-                Text("Go to Screen Three")
-                    .font(.title2)
-                    .padding()
-                    .background(Color.green)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
+                VStack {
+                    // Top welcome label
+                    Text("Welcome \(PushApp.shared.getPersistentDeviceId())")
+                        .font(.headline)
+                        .padding(.top, 40)
+                    
+                    
+                    Spacer()
+
+                    // Center placeholder with tooltip
+                    VStack(spacing: 8) {
+                        Text("C")
+                            .padding()
+                            .background(Color.gray.opacity(0.2))
+                            .tooltip(placeholderId: "center")
+
+                        // Instruction label
+                        Text("create tool tip with widget_open and value as center to see tooltip here")
+                            .font(.caption)
+                            .foregroundColor(.gray)
+                            .multilineTextAlignment(.center)
+                            .padding(.horizontal, 16)
+                    }
+                    .position(x: geo.size.width / 2, y: geo.size.height / 2)
+
+                    Spacer()
+                    
+                    PushAppInlineView(placeholderId: "login_banner")
+                                    .frame(width: 300, height: 200)
+                    Spacer()
+                }
             }
         }
-        .navigationTitle("Two")
-        .trackPage(name: "ScreenTwo")
+        .trackPage(name: "login")
     }
 }
 
-struct ScreenThree: View {
-    @Environment(\.dismiss) var dismiss
 
-    var body: some View {
-        VStack {
-            Text("Screen Three")
-                .font(.largeTitle)
-                .padding()
 
-            Button(action: {
-                dismissToRoot()
-            }) {
-                Text("Back to Screen One")
-                    .font(.title2)
-                    .padding()
-                    .background(Color.red)
-                    .foregroundColor(.white)
-                    .cornerRadius(10)
-            }
-        }
-        .navigationTitle("Three")
-        .trackPage(name: "ScreenThree")
-    }
 
-    private func dismissToRoot() {
-        DispatchQueue.main.async {
-            UIApplication.shared.windows.first?.rootViewController?.dismiss(animated: true, completion: nil)
-        }
-    }
-}
+
+
+
+
+
+
+

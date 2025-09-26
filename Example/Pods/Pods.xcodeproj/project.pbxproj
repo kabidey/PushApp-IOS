@@ -3,167 +3,241 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 70;
+	objectVersion = 77;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		114125A578FE1A2A2C93327550EB5062 /* Pods-PushApp-IOS_Tests-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 16B58DCBC9081982CE57C2CAFEED0BDE /* Pods-PushApp-IOS_Tests-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		2BFCD7060FC39270D4A6267E035ADB67 /* PushApp-IOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 770F6055B9B394325BDD3C7587139B7D /* PushApp-IOS-dummy.m */; };
-		7A95195CBC2756C409989D8E43564626 /* Pods-PushApp-IOS_Tests-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 7069FBCA6E67A7E129A5D4779F993EBC /* Pods-PushApp-IOS_Tests-dummy.m */; };
-		7CCA2A921C59A9A7E8CA68E7FDA2AD7B /* PushApp-IOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 194AD772F13D2F516C0F1C9A6BA6F1C4 /* PushApp-IOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		927DADF5511033D35A910004C8AE9E27 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		99AD91A015ADA05EAB1082166ECAA7F6 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
-		B0C28D60EA2396D67A4D05E3A6EDA3FB /* Pods-PushApp-IOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = F77289D63BAB18E0C07C7A1C00EFD792 /* Pods-PushApp-IOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		C962D390809376D50DFD2B49DFB52BBC /* Pods-PushApp-IOS_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A9A9A7DCC27FDE0CC263837831238665 /* Pods-PushApp-IOS_Example-dummy.m */; };
-		D80727663FBC68548BB5C3A4C399BE15 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */; };
+		27C21251A2FF442D1094F7028451BB28 /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CA685349707DD4A84D22597BF1D8A015 /* WebKit.framework */; };
+		359A8629A0F3C46C7984AE3A5BDD5DB4 /* EasyTipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CC9192504906C77C80664E3FF0A76753 /* EasyTipView.swift */; };
+		45B95651B378FDA35FBA88E93FCF650B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8A9D3CCF2BAED5C70F89ACB141AAF3 /* Foundation.framework */; };
+		53155503C17C25CCD0B217C90378EB9D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8D0BC6A86486E67D7F7E515E3677C8E5 /* UIKit.framework */; };
+		5FA1E2066DD2BBAAA468FB726A37BA12 /* PushApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5C3D0FCD71387A0D75CFAA5E68842A99 /* PushApp.swift */; };
+		6818FD6265C609FDA29FBDA5D1511EBA /* UserNotifications.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D778DAC7C1067E0F4A8AFA91D12914 /* UserNotifications.framework */; };
+		6E84E64A0AADFDE08909233A8D125398 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8A9D3CCF2BAED5C70F89ACB141AAF3 /* Foundation.framework */; };
+		6F3F6EAE981C706F0E13A462FFA8B55A /* EasyTipView-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 136AF3C46D2494EC9A845ACAFD23580E /* EasyTipView-dummy.m */; };
+		8D759CA6905ED3E6AE7A5F3C494E22FF /* PushApp-IOS-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 277DCE75CFEF58E8CF2F32309BB81E30 /* PushApp-IOS-dummy.m */; };
+		A1D9DDB6B2D43658A421A6A099AFEE85 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 5231EE359DF02B3289AE6AF41358F33A /* SwiftUI.framework */; };
+		B63B34813C1BCA6983517808C47D3364 /* EasyTipView-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 30E57C6B40F5A1C65F8F1D1B34C754C4 /* EasyTipView-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		B6FFF5023CA5C923C3740A95602CC93F /* PushApp-IOS-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = A2AF2B6A0CD39407C768BA26030D5459 /* PushApp-IOS-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		CE4BEE09A90F3C6EDABFB042630295AC /* Pods-PushApp-IOS_Example-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = B4D2202242FC77A407289C2148BD19C2 /* Pods-PushApp-IOS_Example-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F48DCDEAD8ACA5DE257286959DD0C5D1 /* UIKitExtensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = A5274A45BD9D5004BF0CA16FEA0A2647 /* UIKitExtensions.swift */; };
+		F6898D6948B413FBBEBB53842C995291 /* Pods-PushApp-IOS_Example-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 1101545908BBD1C1C9B801BC4039BADD /* Pods-PushApp-IOS_Example-dummy.m */; };
+		FA0818810A4BCAE0B8286BD0301CFA0F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8A8A9D3CCF2BAED5C70F89ACB141AAF3 /* Foundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		3C97D27F3A8089A939F19029A164538B /* PBXContainerItemProxy */ = {
+		8A398563E3B05F334381CE8169170BB7 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = 23ADA097B19591BF985DA081A40FFB26;
 			remoteInfo = "PushApp-IOS";
 		};
-		5BF77F6B94180EA01E6311B08B7E17C9 /* PBXContainerItemProxy */ = {
+		D874D3C318F54CD425FF8D1DC8207278 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = F8DAA7DD52587619220DABC5201BCAB4;
-			remoteInfo = "Pods-PushApp-IOS_Example";
+			remoteGlobalIDString = 048D21E3C8151CD23D428D38093E1538;
+			remoteInfo = EasyTipView;
+		};
+		E306BD994D10791ED89B5895343DA2D3 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = BFDFE7DC352907FC980B868725387E98 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 048D21E3C8151CD23D428D38093E1538;
+			remoteInfo = EasyTipView;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		073F2A1BC1FAC067108384EBEBD336B9 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = LICENSE; sourceTree = "<group>"; };
-		094734F2E68153613BFA59EBB78D4FA8 /* Pods-PushApp-IOS_Tests.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PushApp-IOS_Tests.modulemap"; sourceTree = "<group>"; };
-		0C4C4E5238170E2CE92F41983923F2B0 /* Pods-PushApp-IOS_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PushApp-IOS_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		16B58DCBC9081982CE57C2CAFEED0BDE /* Pods-PushApp-IOS_Tests-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PushApp-IOS_Tests-umbrella.h"; sourceTree = "<group>"; };
-		194AD772F13D2F516C0F1C9A6BA6F1C4 /* PushApp-IOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PushApp-IOS-umbrella.h"; sourceTree = "<group>"; };
-		1CA292CF4766318E09F1869F4C9EC410 /* Pods-PushApp-IOS_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PushApp-IOS_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		27424A74B16A73EF016E9C6F1F817125 /* Pods-PushApp-IOS_Tests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PushApp-IOS_Tests-Info.plist"; sourceTree = "<group>"; };
-		27A93C6BBF366C9967D78D4A2436A38B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
-		384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
-		3D7B06B906F101C405E8AA069970FC32 /* PushApp-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PushApp-IOS.release.xcconfig"; sourceTree = "<group>"; };
-		442A1D33447B228AB5A8BC5F72C21A03 /* PushApp-IOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PushApp-IOS-prefix.pch"; sourceTree = "<group>"; };
-		54DA4858204F95DD8CCAAC003544EF12 /* Pods_PushApp_IOS_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushApp_IOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6837E0471FE3E713FAA14365CE90816E /* Pods-PushApp-IOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PushApp-IOS_Example.release.xcconfig"; sourceTree = "<group>"; };
-		6B0DD40F9D076556B2FC51F428FA276F /* Pods_PushApp_IOS_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_PushApp_IOS_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		6FF35F9EA8FD837DB369A42B65D5A3E8 /* Pods-PushApp-IOS_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PushApp-IOS_Example-frameworks.sh"; sourceTree = "<group>"; };
-		7069FBCA6E67A7E129A5D4779F993EBC /* Pods-PushApp-IOS_Tests-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PushApp-IOS_Tests-dummy.m"; sourceTree = "<group>"; };
-		770F6055B9B394325BDD3C7587139B7D /* PushApp-IOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PushApp-IOS-dummy.m"; sourceTree = "<group>"; };
-		9A02034AA18D6815ACCB6BFA4D54AA00 /* Pods-PushApp-IOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PushApp-IOS_Example.modulemap"; sourceTree = "<group>"; };
-		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
-		A0AF51480EA379C29AAE958EE050BC4F /* Pods-PushApp-IOS_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PushApp-IOS_Example-Info.plist"; sourceTree = "<group>"; };
-		A362A50F4BB9D9646D5DB342D84B42C2 /* Pods-PushApp-IOS_Tests-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PushApp-IOS_Tests-acknowledgements.plist"; sourceTree = "<group>"; };
-		A9A9A7DCC27FDE0CC263837831238665 /* Pods-PushApp-IOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PushApp-IOS_Example-dummy.m"; sourceTree = "<group>"; };
-		AD66FBA18B72E53A7DEF0CDB67FA6733 /* Pods-PushApp-IOS_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PushApp-IOS_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
-		B77D8149C453DDACD31D4ACD56323DDA /* Pods-PushApp-IOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PushApp-IOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
-		BF59A2B93A04C0AB27F5833A73659E30 /* Pods-PushApp-IOS_Tests-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PushApp-IOS_Tests-acknowledgements.markdown"; sourceTree = "<group>"; };
-		D5542D14F85B77DEABC6917596225351 /* PushApp-IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PushApp-IOS.debug.xcconfig"; sourceTree = "<group>"; };
-		D8F0B31D214452A438FABE1ED4FCDE4C /* PushApp-IOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "PushApp-IOS.modulemap"; sourceTree = "<group>"; };
-		EA0FD8EB3EFDB4D8BAE661FE4050FD8F /* PushApp_IOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = PushApp_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		EA74C816917938603C5859588A3689A0 /* PushApp-IOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; path = "PushApp-IOS.podspec"; sourceTree = "<group>"; tabWidth = 2; };
-		F64C2205D430CF510EED50F293B71568 /* Pods-PushApp-IOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PushApp-IOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
-		F77289D63BAB18E0C07C7A1C00EFD792 /* Pods-PushApp-IOS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PushApp-IOS_Example-umbrella.h"; sourceTree = "<group>"; };
-		F8B47036FC49F01073FFEA627A15DB7C /* PushApp-IOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PushApp-IOS-Info.plist"; sourceTree = "<group>"; };
+		0A9F538FB872077C217E469666DAFCB7 /* EasyTipView-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyTipView-prefix.pch"; sourceTree = "<group>"; };
+		1101545908BBD1C1C9B801BC4039BADD /* Pods-PushApp-IOS_Example-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-PushApp-IOS_Example-dummy.m"; sourceTree = "<group>"; };
+		136AF3C46D2494EC9A845ACAFD23580E /* EasyTipView-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "EasyTipView-dummy.m"; sourceTree = "<group>"; };
+		2151A1C4DEE3B60F96B9B47918742207 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		242156557544398519F11630FAAA487E /* EasyTipView.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyTipView.release.xcconfig; sourceTree = "<group>"; };
+		250A5AC3F318A5C93FC72AFC2DE340AA /* EasyTipView.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = EasyTipView.modulemap; sourceTree = "<group>"; };
+		277DCE75CFEF58E8CF2F32309BB81E30 /* PushApp-IOS-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "PushApp-IOS-dummy.m"; sourceTree = "<group>"; };
+		280C3ADCC7D408A2CC3CD0A5E9336BC2 /* EasyTipView-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "EasyTipView-Info.plist"; sourceTree = "<group>"; };
+		30E57C6B40F5A1C65F8F1D1B34C754C4 /* EasyTipView-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "EasyTipView-umbrella.h"; sourceTree = "<group>"; };
+		34D778DAC7C1067E0F4A8AFA91D12914 /* UserNotifications.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UserNotifications.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/UserNotifications.framework; sourceTree = DEVELOPER_DIR; };
+		46D76058872F2FF89EDAF476A1EBAC4A /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		4B052918CCC38747478E8D8CC9A9775D /* PushApp-IOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PushApp-IOS.debug.xcconfig"; sourceTree = "<group>"; };
+		5231EE359DF02B3289AE6AF41358F33A /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/SwiftUI.framework; sourceTree = DEVELOPER_DIR; };
+		54DA4858204F95DD8CCAAC003544EF12 /* Pods-PushApp-IOS_Example */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "Pods-PushApp-IOS_Example"; path = Pods_PushApp_IOS_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		5C3D0FCD71387A0D75CFAA5E68842A99 /* PushApp.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PushApp.swift; path = Classes/PushApp.swift; sourceTree = "<group>"; };
+		6B0572F5154AD7EA39906DCD36F67FEF /* PushApp-IOS-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "PushApp-IOS-Info.plist"; sourceTree = "<group>"; };
+		6F410C39EB0F2F42246534EE43F4983C /* Pods-PushApp-IOS_Example.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "Pods-PushApp-IOS_Example.modulemap"; sourceTree = "<group>"; };
+		742AB02ECB6F17AB8EE8650635166D4F /* Pods-PushApp-IOS_Example-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PushApp-IOS_Example-acknowledgements.plist"; sourceTree = "<group>"; };
+		8A63F6AA6A1D241970B6D28C2970A8B9 /* EasyTipView */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = EasyTipView; path = EasyTipView.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8A8A9D3CCF2BAED5C70F89ACB141AAF3 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		8D0BC6A86486E67D7F7E515E3677C8E5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/UIKit.framework; sourceTree = DEVELOPER_DIR; };
+		8D1C6D0DE91CC592B1A63A550E777197 /* Pods-PushApp-IOS_Example-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-PushApp-IOS_Example-acknowledgements.markdown"; sourceTree = "<group>"; };
+		8EB97634509873DBD5FBD939841FEFD0 /* Pods-PushApp-IOS_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PushApp-IOS_Example.debug.xcconfig"; sourceTree = "<group>"; };
+		9D940727FF8FB9C785EB98E56350EF41 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A2AF2B6A0CD39407C768BA26030D5459 /* PushApp-IOS-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PushApp-IOS-umbrella.h"; sourceTree = "<group>"; };
+		A3C54B1E01768A765B7107BC1F31755B /* Pods-PushApp-IOS_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-PushApp-IOS_Example.release.xcconfig"; sourceTree = "<group>"; };
+		A5274A45BD9D5004BF0CA16FEA0A2647 /* UIKitExtensions.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = UIKitExtensions.swift; path = Sources/EasyTipView/UIKitExtensions.swift; sourceTree = "<group>"; };
+		A65B905EEAD9D8517791D84297834E84 /* PushApp-IOS.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = "PushApp-IOS.podspec"; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		A6E6F0776FF3D15126CBADFBBFED28C9 /* PushApp-IOS-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "PushApp-IOS-prefix.pch"; sourceTree = "<group>"; };
+		A86C2A2C79B6B30DC1204A0FE6C561F4 /* EasyTipView.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = EasyTipView.debug.xcconfig; sourceTree = "<group>"; };
+		AD3227D2D4F34428334C4812DA36C31A /* PushApp-IOS.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = "PushApp-IOS.modulemap"; sourceTree = "<group>"; };
+		B4D2202242FC77A407289C2148BD19C2 /* Pods-PushApp-IOS_Example-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-PushApp-IOS_Example-umbrella.h"; sourceTree = "<group>"; };
+		B6D490C3704ED646EDA9CF352476FF6A /* Pods-PushApp-IOS_Example-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-PushApp-IOS_Example-Info.plist"; sourceTree = "<group>"; };
+		CA685349707DD4A84D22597BF1D8A015 /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS18.0.sdk/System/Library/Frameworks/WebKit.framework; sourceTree = DEVELOPER_DIR; };
+		CC9192504906C77C80664E3FF0A76753 /* EasyTipView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EasyTipView.swift; path = Sources/EasyTipView/EasyTipView.swift; sourceTree = "<group>"; };
+		D40151A64161F0D8BDA10C31F1D9921D /* Pods-PushApp-IOS_Example-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-PushApp-IOS_Example-frameworks.sh"; sourceTree = "<group>"; };
+		EA0FD8EB3EFDB4D8BAE661FE4050FD8F /* PushApp-IOS */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = "PushApp-IOS"; path = PushApp_IOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EBBD4355D0DE69E6F5A4DC6359FEBFA7 /* PushApp-IOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "PushApp-IOS.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
-/* Begin PBXFileSystemSynchronizedRootGroup section */
-		F9AB3C552E2615BE00F9D6F1 /* Classes */ = {isa = PBXFileSystemSynchronizedRootGroup; explicitFileTypes = {}; explicitFolders = (); path = Classes; sourceTree = "<group>"; };
-/* End PBXFileSystemSynchronizedRootGroup section */
-
 /* Begin PBXFrameworksBuildPhase section */
-		9CDFE336537313F96B45F3776FA4B932 /* Frameworks */ = {
+		609241842FDCEB71D44160149D1DF10A /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				927DADF5511033D35A910004C8AE9E27 /* Foundation.framework in Frameworks */,
+				45B95651B378FDA35FBA88E93FCF650B /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		A2E2DA285B9F09C534A31E919727547F /* Frameworks */ = {
+		668D2EC085747BF03518705FDC898CF1 /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				99AD91A015ADA05EAB1082166ECAA7F6 /* Foundation.framework in Frameworks */,
+				6E84E64A0AADFDE08909233A8D125398 /* Foundation.framework in Frameworks */,
+				A1D9DDB6B2D43658A421A6A099AFEE85 /* SwiftUI.framework in Frameworks */,
+				53155503C17C25CCD0B217C90378EB9D /* UIKit.framework in Frameworks */,
+				6818FD6265C609FDA29FBDA5D1511EBA /* UserNotifications.framework in Frameworks */,
+				27C21251A2FF442D1094F7028451BB28 /* WebKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		C0F325B5BBBFDB34A93BA9C628C12C35 /* Frameworks */ = {
+		F33C4312FEA3DEFF788479E191A36DCA /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				D80727663FBC68548BB5C3A4C399BE15 /* Foundation.framework in Frameworks */,
+				FA0818810A4BCAE0B8286BD0301CFA0F /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		3480775800EF6A2A85AE6B57326056B3 /* PushApp-IOS */ = {
+		09F418C56529EA9EFF81C22222AD1DF7 /* Pod */ = {
 			isa = PBXGroup;
 			children = (
-				F9AB3C552E2615BE00F9D6F1 /* Classes */,
-				7251C4F83CD64CAC1A4A215F206F3D6F /* Pod */,
-				D194EB434778CFC3BA3BE2669BEB65DA /* Support Files */,
+				46D76058872F2FF89EDAF476A1EBAC4A /* LICENSE */,
+				A65B905EEAD9D8517791D84297834E84 /* PushApp-IOS.podspec */,
+				2151A1C4DEE3B60F96B9B47918742207 /* README.md */,
 			);
-			name = "PushApp-IOS";
-			path = ../..;
+			name = Pod;
 			sourceTree = "<group>";
 		};
-		3B9C5AF4BC4650268CD1047EE72CED03 /* Pods-PushApp-IOS_Tests */ = {
+		20DEA457A93FAB0DAF1627E5FC093C0D /* iOS */ = {
 			isa = PBXGroup;
 			children = (
-				094734F2E68153613BFA59EBB78D4FA8 /* Pods-PushApp-IOS_Tests.modulemap */,
-				BF59A2B93A04C0AB27F5833A73659E30 /* Pods-PushApp-IOS_Tests-acknowledgements.markdown */,
-				A362A50F4BB9D9646D5DB342D84B42C2 /* Pods-PushApp-IOS_Tests-acknowledgements.plist */,
-				7069FBCA6E67A7E129A5D4779F993EBC /* Pods-PushApp-IOS_Tests-dummy.m */,
-				27424A74B16A73EF016E9C6F1F817125 /* Pods-PushApp-IOS_Tests-Info.plist */,
-				16B58DCBC9081982CE57C2CAFEED0BDE /* Pods-PushApp-IOS_Tests-umbrella.h */,
-				0C4C4E5238170E2CE92F41983923F2B0 /* Pods-PushApp-IOS_Tests.debug.xcconfig */,
-				1CA292CF4766318E09F1869F4C9EC410 /* Pods-PushApp-IOS_Tests.release.xcconfig */,
+				8A8A9D3CCF2BAED5C70F89ACB141AAF3 /* Foundation.framework */,
+				5231EE359DF02B3289AE6AF41358F33A /* SwiftUI.framework */,
+				8D0BC6A86486E67D7F7E515E3677C8E5 /* UIKit.framework */,
+				34D778DAC7C1067E0F4A8AFA91D12914 /* UserNotifications.framework */,
+				CA685349707DD4A84D22597BF1D8A015 /* WebKit.framework */,
 			);
-			name = "Pods-PushApp-IOS_Tests";
-			path = "Target Support Files/Pods-PushApp-IOS_Tests";
+			name = iOS;
 			sourceTree = "<group>";
 		};
-		45D9A755B3C2F9BC76D1199BE841A456 /* Targets Support Files */ = {
+		4AB3D06BE4010BA512DBCE1D8DF2DDBF /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				FB159F37F8F404DA22D53E1E8D6FB99F /* Pods-PushApp-IOS_Example */,
-				3B9C5AF4BC4650268CD1047EE72CED03 /* Pods-PushApp-IOS_Tests */,
-			);
-			name = "Targets Support Files";
-			sourceTree = "<group>";
-		};
-		644C8E245CCC8E500DD88754E454307D /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				54DA4858204F95DD8CCAAC003544EF12 /* Pods_PushApp_IOS_Example.framework */,
-				6B0DD40F9D076556B2FC51F428FA276F /* Pods_PushApp_IOS_Tests.framework */,
-				EA0FD8EB3EFDB4D8BAE661FE4050FD8F /* PushApp_IOS.framework */,
+				8A63F6AA6A1D241970B6D28C2970A8B9 /* EasyTipView */,
+				54DA4858204F95DD8CCAAC003544EF12 /* Pods-PushApp-IOS_Example */,
+				EA0FD8EB3EFDB4D8BAE661FE4050FD8F /* PushApp-IOS */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		7251C4F83CD64CAC1A4A215F206F3D6F /* Pod */ = {
+		6007630BD8F61D5BFD8E95E674D46BE4 /* EasyTipView */ = {
 			isa = PBXGroup;
 			children = (
-				073F2A1BC1FAC067108384EBEBD336B9 /* LICENSE */,
-				EA74C816917938603C5859588A3689A0 /* PushApp-IOS.podspec */,
-				27A93C6BBF366C9967D78D4A2436A38B /* README.md */,
+				CC9192504906C77C80664E3FF0A76753 /* EasyTipView.swift */,
+				A5274A45BD9D5004BF0CA16FEA0A2647 /* UIKitExtensions.swift */,
+				BDD1C9D404B4D8864758E8C497AB0441 /* Support Files */,
 			);
-			name = Pod;
+			name = EasyTipView;
+			path = EasyTipView;
+			sourceTree = "<group>";
+		};
+		830CBD11AB0B928CFB359C7A0ED330EE /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				BE03C2D1421B0A57BAF6C78306372F82 /* Pods-PushApp-IOS_Example */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		B94D7768568A9992200DB461E8CF687F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				20DEA457A93FAB0DAF1627E5FC093C0D /* iOS */,
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 		BA051D4D710A8E8E900DAA042DC1C333 /* Development Pods */ = {
 			isa = PBXGroup;
 			children = (
-				3480775800EF6A2A85AE6B57326056B3 /* PushApp-IOS */,
+				BCE6A9E387FCB26E90DCAF90ADAD7CFB /* PushApp-IOS */,
 			);
 			name = "Development Pods";
+			sourceTree = "<group>";
+		};
+		BCE6A9E387FCB26E90DCAF90ADAD7CFB /* PushApp-IOS */ = {
+			isa = PBXGroup;
+			children = (
+				5C3D0FCD71387A0D75CFAA5E68842A99 /* PushApp.swift */,
+				09F418C56529EA9EFF81C22222AD1DF7 /* Pod */,
+				FB0D5B9C0B512E5C509C6AFD41B253FB /* Support Files */,
+			);
+			name = "PushApp-IOS";
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		BDD1C9D404B4D8864758E8C497AB0441 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				250A5AC3F318A5C93FC72AFC2DE340AA /* EasyTipView.modulemap */,
+				136AF3C46D2494EC9A845ACAFD23580E /* EasyTipView-dummy.m */,
+				280C3ADCC7D408A2CC3CD0A5E9336BC2 /* EasyTipView-Info.plist */,
+				0A9F538FB872077C217E469666DAFCB7 /* EasyTipView-prefix.pch */,
+				30E57C6B40F5A1C65F8F1D1B34C754C4 /* EasyTipView-umbrella.h */,
+				A86C2A2C79B6B30DC1204A0FE6C561F4 /* EasyTipView.debug.xcconfig */,
+				242156557544398519F11630FAAA487E /* EasyTipView.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/EasyTipView";
+			sourceTree = "<group>";
+		};
+		BE03C2D1421B0A57BAF6C78306372F82 /* Pods-PushApp-IOS_Example */ = {
+			isa = PBXGroup;
+			children = (
+				6F410C39EB0F2F42246534EE43F4983C /* Pods-PushApp-IOS_Example.modulemap */,
+				8D1C6D0DE91CC592B1A63A550E777197 /* Pods-PushApp-IOS_Example-acknowledgements.markdown */,
+				742AB02ECB6F17AB8EE8650635166D4F /* Pods-PushApp-IOS_Example-acknowledgements.plist */,
+				1101545908BBD1C1C9B801BC4039BADD /* Pods-PushApp-IOS_Example-dummy.m */,
+				D40151A64161F0D8BDA10C31F1D9921D /* Pods-PushApp-IOS_Example-frameworks.sh */,
+				B6D490C3704ED646EDA9CF352476FF6A /* Pods-PushApp-IOS_Example-Info.plist */,
+				B4D2202242FC77A407289C2148BD19C2 /* Pods-PushApp-IOS_Example-umbrella.h */,
+				8EB97634509873DBD5FBD939841FEFD0 /* Pods-PushApp-IOS_Example.debug.xcconfig */,
+				A3C54B1E01768A765B7107BC1F31755B /* Pods-PushApp-IOS_Example.release.xcconfig */,
+			);
+			name = "Pods-PushApp-IOS_Example";
+			path = "Target Support Files/Pods-PushApp-IOS_Example";
+			sourceTree = "<group>";
+		};
+		BEA5CEAADB7CD9A01D99CD435D55CCB3 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				6007630BD8F61D5BFD8E95E674D46BE4 /* EasyTipView */,
+			);
+			name = Pods;
 			sourceTree = "<group>";
 		};
 		CF1408CF629C7361332E53B88F7BD30C = {
@@ -171,147 +245,113 @@
 			children = (
 				9D940727FF8FB9C785EB98E56350EF41 /* Podfile */,
 				BA051D4D710A8E8E900DAA042DC1C333 /* Development Pods */,
-				D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */,
-				644C8E245CCC8E500DD88754E454307D /* Products */,
-				45D9A755B3C2F9BC76D1199BE841A456 /* Targets Support Files */,
+				B94D7768568A9992200DB461E8CF687F /* Frameworks */,
+				BEA5CEAADB7CD9A01D99CD435D55CCB3 /* Pods */,
+				4AB3D06BE4010BA512DBCE1D8DF2DDBF /* Products */,
+				830CBD11AB0B928CFB359C7A0ED330EE /* Targets Support Files */,
 			);
 			sourceTree = "<group>";
 		};
-		D194EB434778CFC3BA3BE2669BEB65DA /* Support Files */ = {
+		FB0D5B9C0B512E5C509C6AFD41B253FB /* Support Files */ = {
 			isa = PBXGroup;
 			children = (
-				D8F0B31D214452A438FABE1ED4FCDE4C /* PushApp-IOS.modulemap */,
-				770F6055B9B394325BDD3C7587139B7D /* PushApp-IOS-dummy.m */,
-				F8B47036FC49F01073FFEA627A15DB7C /* PushApp-IOS-Info.plist */,
-				442A1D33447B228AB5A8BC5F72C21A03 /* PushApp-IOS-prefix.pch */,
-				194AD772F13D2F516C0F1C9A6BA6F1C4 /* PushApp-IOS-umbrella.h */,
-				D5542D14F85B77DEABC6917596225351 /* PushApp-IOS.debug.xcconfig */,
-				3D7B06B906F101C405E8AA069970FC32 /* PushApp-IOS.release.xcconfig */,
+				AD3227D2D4F34428334C4812DA36C31A /* PushApp-IOS.modulemap */,
+				277DCE75CFEF58E8CF2F32309BB81E30 /* PushApp-IOS-dummy.m */,
+				6B0572F5154AD7EA39906DCD36F67FEF /* PushApp-IOS-Info.plist */,
+				A6E6F0776FF3D15126CBADFBBFED28C9 /* PushApp-IOS-prefix.pch */,
+				A2AF2B6A0CD39407C768BA26030D5459 /* PushApp-IOS-umbrella.h */,
+				4B052918CCC38747478E8D8CC9A9775D /* PushApp-IOS.debug.xcconfig */,
+				EBBD4355D0DE69E6F5A4DC6359FEBFA7 /* PushApp-IOS.release.xcconfig */,
 			);
 			name = "Support Files";
 			path = "Example/Pods/Target Support Files/PushApp-IOS";
 			sourceTree = "<group>";
 		};
-		D210D550F4EA176C3123ED886F8F87F5 /* Frameworks */ = {
-			isa = PBXGroup;
-			children = (
-				E4801F62A6B08CD9B5410329F1A18FDE /* iOS */,
-			);
-			name = Frameworks;
-			sourceTree = "<group>";
-		};
-		E4801F62A6B08CD9B5410329F1A18FDE /* iOS */ = {
-			isa = PBXGroup;
-			children = (
-				384DDA2CB25005BD6479B5987C619DD4 /* Foundation.framework */,
-			);
-			name = iOS;
-			sourceTree = "<group>";
-		};
-		FB159F37F8F404DA22D53E1E8D6FB99F /* Pods-PushApp-IOS_Example */ = {
-			isa = PBXGroup;
-			children = (
-				9A02034AA18D6815ACCB6BFA4D54AA00 /* Pods-PushApp-IOS_Example.modulemap */,
-				AD66FBA18B72E53A7DEF0CDB67FA6733 /* Pods-PushApp-IOS_Example-acknowledgements.markdown */,
-				B77D8149C453DDACD31D4ACD56323DDA /* Pods-PushApp-IOS_Example-acknowledgements.plist */,
-				A9A9A7DCC27FDE0CC263837831238665 /* Pods-PushApp-IOS_Example-dummy.m */,
-				6FF35F9EA8FD837DB369A42B65D5A3E8 /* Pods-PushApp-IOS_Example-frameworks.sh */,
-				A0AF51480EA379C29AAE958EE050BC4F /* Pods-PushApp-IOS_Example-Info.plist */,
-				F77289D63BAB18E0C07C7A1C00EFD792 /* Pods-PushApp-IOS_Example-umbrella.h */,
-				F64C2205D430CF510EED50F293B71568 /* Pods-PushApp-IOS_Example.debug.xcconfig */,
-				6837E0471FE3E713FAA14365CE90816E /* Pods-PushApp-IOS_Example.release.xcconfig */,
-			);
-			name = "Pods-PushApp-IOS_Example";
-			path = "Target Support Files/Pods-PushApp-IOS_Example";
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
-		160E5C499BC277B8522271B3E6368D6F /* Headers */ = {
+		345A69A727668B49B047AEFB10106FB5 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				114125A578FE1A2A2C93327550EB5062 /* Pods-PushApp-IOS_Tests-umbrella.h in Headers */,
+				B63B34813C1BCA6983517808C47D3364 /* EasyTipView-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		8E2E7AFF14B5766D0B1D6C5EA16601F1 /* Headers */ = {
+		7A3B079BC8B50373CB71FDE4347699EA /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B0C28D60EA2396D67A4D05E3A6EDA3FB /* Pods-PushApp-IOS_Example-umbrella.h in Headers */,
+				B6FFF5023CA5C923C3740A95602CC93F /* PushApp-IOS-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		AD0CDEDBA44A72BB1182F5553ED34F4C /* Headers */ = {
+		BE3BD5C8D1806DBA3ED1750B0AD790E7 /* Headers */ = {
 			isa = PBXHeadersBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7CCA2A921C59A9A7E8CA68E7FDA2AD7B /* PushApp-IOS-umbrella.h in Headers */,
+				CE4BEE09A90F3C6EDABFB042630295AC /* Pods-PushApp-IOS_Example-umbrella.h in Headers */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXHeadersBuildPhase section */
 
 /* Begin PBXNativeTarget section */
-		23ADA097B19591BF985DA081A40FFB26 /* PushApp-IOS */ = {
+		048D21E3C8151CD23D428D38093E1538 /* EasyTipView */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 39CD9CD333AE7A6F93846F1B5A1DF3FD /* Build configuration list for PBXNativeTarget "PushApp-IOS" */;
+			buildConfigurationList = F90EBFD563937CF5A21E78EEE92BBDC1 /* Build configuration list for PBXNativeTarget "EasyTipView" */;
 			buildPhases = (
-				AD0CDEDBA44A72BB1182F5553ED34F4C /* Headers */,
-				13B1D7313726E8C73767CFD08E1A08F6 /* Sources */,
-				A2E2DA285B9F09C534A31E919727547F /* Frameworks */,
-				D700ABD87D3F65E4ED1974C007DA4F4C /* Resources */,
+				345A69A727668B49B047AEFB10106FB5 /* Headers */,
+				AB265E7C3F1FC6E5ECEB5B84C57398C1 /* Sources */,
+				609241842FDCEB71D44160149D1DF10A /* Frameworks */,
+				BC5551D5B319878F9E10B8F38746D922 /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
 			);
-			fileSystemSynchronizedGroups = (
-				F9AB3C552E2615BE00F9D6F1 /* Classes */,
+			name = EasyTipView;
+			productName = EasyTipView;
+			productReference = 8A63F6AA6A1D241970B6D28C2970A8B9 /* EasyTipView */;
+			productType = "com.apple.product-type.framework";
+		};
+		23ADA097B19591BF985DA081A40FFB26 /* PushApp-IOS */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = E756F27CD6E864341BB4EFDF6E172742 /* Build configuration list for PBXNativeTarget "PushApp-IOS" */;
+			buildPhases = (
+				7A3B079BC8B50373CB71FDE4347699EA /* Headers */,
+				1EBAB029A84C8483C793020306B44CB1 /* Sources */,
+				668D2EC085747BF03518705FDC898CF1 /* Frameworks */,
+				3EC0ED2507282B8FEA67788678F6800E /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F346D7EBEF8CB408E0A0A19837A6AE87 /* PBXTargetDependency */,
 			);
 			name = "PushApp-IOS";
 			productName = PushApp_IOS;
-			productReference = EA0FD8EB3EFDB4D8BAE661FE4050FD8F /* PushApp_IOS.framework */;
-			productType = "com.apple.product-type.framework";
-		};
-		59C5564C2A2325CE5EF2A405C79E4292 /* Pods-PushApp-IOS_Tests */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = F73125721323CFEF7A1406ACB2B7E19A /* Build configuration list for PBXNativeTarget "Pods-PushApp-IOS_Tests" */;
-			buildPhases = (
-				160E5C499BC277B8522271B3E6368D6F /* Headers */,
-				33D46B1CE61689095660539AC4201229 /* Sources */,
-				C0F325B5BBBFDB34A93BA9C628C12C35 /* Frameworks */,
-				A58980FA4B105B14D0764A6CD9999FCA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-				F039411CA65BAC0163D0D6DFBE7E794E /* PBXTargetDependency */,
-			);
-			name = "Pods-PushApp-IOS_Tests";
-			productName = Pods_PushApp_IOS_Tests;
-			productReference = 6B0DD40F9D076556B2FC51F428FA276F /* Pods_PushApp_IOS_Tests.framework */;
+			productReference = EA0FD8EB3EFDB4D8BAE661FE4050FD8F /* PushApp-IOS */;
 			productType = "com.apple.product-type.framework";
 		};
 		F8DAA7DD52587619220DABC5201BCAB4 /* Pods-PushApp-IOS_Example */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 7F159596A643B3574C2F56ABA5E4E2AF /* Build configuration list for PBXNativeTarget "Pods-PushApp-IOS_Example" */;
+			buildConfigurationList = 1A68D669427180C7FCF095B2445D44BA /* Build configuration list for PBXNativeTarget "Pods-PushApp-IOS_Example" */;
 			buildPhases = (
-				8E2E7AFF14B5766D0B1D6C5EA16601F1 /* Headers */,
-				81075F761AA332DB69B9DE2E9434EE83 /* Sources */,
-				9CDFE336537313F96B45F3776FA4B932 /* Frameworks */,
-				F703E41CCACEA4362DB55AE53CC42CF6 /* Resources */,
+				BE3BD5C8D1806DBA3ED1750B0AD790E7 /* Headers */,
+				F461CE1AD184B35F7EA07727543B53E2 /* Sources */,
+				F33C4312FEA3DEFF788479E191A36DCA /* Frameworks */,
+				B6CCE734173B24BAAA2CEE54003EE7CE /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				8398C9AFE50E47FE78D3F825048287F9 /* PBXTargetDependency */,
+				EC20E60328D80334A4BDB93CD2A0D66E /* PBXTargetDependency */,
+				BEA6174EA0B1C35D61D269D9D78AB7F4 /* PBXTargetDependency */,
 			);
 			name = "Pods-PushApp-IOS_Example";
 			productName = Pods_PushApp_IOS_Example;
-			productReference = 54DA4858204F95DD8CCAAC003544EF12 /* Pods_PushApp_IOS_Example.framework */;
+			productReference = 54DA4858204F95DD8CCAAC003544EF12 /* Pods-PushApp-IOS_Example */;
 			productType = "com.apple.product-type.framework";
 		};
 /* End PBXNativeTarget section */
@@ -324,7 +364,7 @@
 				LastUpgradeCheck = 1600;
 			};
 			buildConfigurationList = 4821239608C13582E20E6DA73FD5F1F9 /* Build configuration list for PBXProject "Pods" */;
-			compatibilityVersion = "Xcode 3.2";
+			compatibilityVersion = "Xcode 16.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -332,33 +372,35 @@
 				en,
 			);
 			mainGroup = CF1408CF629C7361332E53B88F7BD30C;
-			productRefGroup = 644C8E245CCC8E500DD88754E454307D /* Products */;
+			minimizedProjectReferenceProxies = 0;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 4AB3D06BE4010BA512DBCE1D8DF2DDBF /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				048D21E3C8151CD23D428D38093E1538 /* EasyTipView */,
 				F8DAA7DD52587619220DABC5201BCAB4 /* Pods-PushApp-IOS_Example */,
-				59C5564C2A2325CE5EF2A405C79E4292 /* Pods-PushApp-IOS_Tests */,
 				23ADA097B19591BF985DA081A40FFB26 /* PushApp-IOS */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		A58980FA4B105B14D0764A6CD9999FCA /* Resources */ = {
+		3EC0ED2507282B8FEA67788678F6800E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		D700ABD87D3F65E4ED1974C007DA4F4C /* Resources */ = {
+		B6CCE734173B24BAAA2CEE54003EE7CE /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		F703E41CCACEA4362DB55AE53CC42CF6 /* Resources */ = {
+		BC5551D5B319878F9E10B8F38746D922 /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
@@ -368,130 +410,60 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		13B1D7313726E8C73767CFD08E1A08F6 /* Sources */ = {
+		1EBAB029A84C8483C793020306B44CB1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				2BFCD7060FC39270D4A6267E035ADB67 /* PushApp-IOS-dummy.m in Sources */,
+				5FA1E2066DD2BBAAA468FB726A37BA12 /* PushApp.swift in Sources */,
+				8D759CA6905ED3E6AE7A5F3C494E22FF /* PushApp-IOS-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		33D46B1CE61689095660539AC4201229 /* Sources */ = {
+		AB265E7C3F1FC6E5ECEB5B84C57398C1 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				7A95195CBC2756C409989D8E43564626 /* Pods-PushApp-IOS_Tests-dummy.m in Sources */,
+				359A8629A0F3C46C7984AE3A5BDD5DB4 /* EasyTipView.swift in Sources */,
+				6F3F6EAE981C706F0E13A462FFA8B55A /* EasyTipView-dummy.m in Sources */,
+				F48DCDEAD8ACA5DE257286959DD0C5D1 /* UIKitExtensions.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		81075F761AA332DB69B9DE2E9434EE83 /* Sources */ = {
+		F461CE1AD184B35F7EA07727543B53E2 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				C962D390809376D50DFD2B49DFB52BBC /* Pods-PushApp-IOS_Example-dummy.m in Sources */,
+				F6898D6948B413FBBEBB53842C995291 /* Pods-PushApp-IOS_Example-dummy.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		8398C9AFE50E47FE78D3F825048287F9 /* PBXTargetDependency */ = {
+		BEA6174EA0B1C35D61D269D9D78AB7F4 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			name = "PushApp-IOS";
 			target = 23ADA097B19591BF985DA081A40FFB26 /* PushApp-IOS */;
-			targetProxy = 3C97D27F3A8089A939F19029A164538B /* PBXContainerItemProxy */;
+			targetProxy = 8A398563E3B05F334381CE8169170BB7 /* PBXContainerItemProxy */;
 		};
-		F039411CA65BAC0163D0D6DFBE7E794E /* PBXTargetDependency */ = {
+		EC20E60328D80334A4BDB93CD2A0D66E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			name = "Pods-PushApp-IOS_Example";
-			target = F8DAA7DD52587619220DABC5201BCAB4 /* Pods-PushApp-IOS_Example */;
-			targetProxy = 5BF77F6B94180EA01E6311B08B7E17C9 /* PBXContainerItemProxy */;
+			name = EasyTipView;
+			target = 048D21E3C8151CD23D428D38093E1538 /* EasyTipView */;
+			targetProxy = D874D3C318F54CD425FF8D1DC8207278 /* PBXContainerItemProxy */;
+		};
+		F346D7EBEF8CB408E0A0A19837A6AE87 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = EasyTipView;
+			target = 048D21E3C8151CD23D428D38093E1538 /* EasyTipView */;
+			targetProxy = E306BD994D10791ED89B5895343DA2D3 /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin XCBuildConfiguration section */
-		199E391BF64BF631887293B3E6CFFFAD /* Release */ = {
+		1C030233DBD780CB9AF264E726C24B36 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1CA292CF4766318E09F1869F4C9EC410 /* Pods-PushApp-IOS_Tests.release.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-PushApp-IOS_Tests/Pods-PushApp-IOS_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PushApp-IOS_Tests/Pods-PushApp-IOS_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		1EA14869FF82EACC9B802E06A8E72907 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 0C4C4E5238170E2CE92F41983923F2B0 /* Pods-PushApp-IOS_Tests.debug.xcconfig */;
-			buildSettings = {
-				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				INFOPLIST_FILE = "Target Support Files/Pods-PushApp-IOS_Tests/Pods-PushApp-IOS_Tests-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MACH_O_TYPE = staticlib;
-				MODULEMAP_FILE = "Target Support Files/Pods-PushApp-IOS_Tests/Pods-PushApp-IOS_Tests.modulemap";
-				OTHER_LDFLAGS = "";
-				OTHER_LIBTOOLFLAGS = "";
-				PODS_ROOT = "$(SRCROOT)";
-				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
-				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Debug;
-		};
-		33F0A68ACE3DB62045301AFB798CD35C /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = F64C2205D430CF510EED50F293B71568 /* Pods-PushApp-IOS_Example.debug.xcconfig */;
+			baseConfigurationReference = A3C54B1E01768A765B7107BC1F31755B /* Pods-PushApp-IOS_Example.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -507,7 +479,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = "Target Support Files/Pods-PushApp-IOS_Example/Pods-PushApp-IOS_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -523,14 +495,15 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
-		6140B623BE0BCCBBD9F9ACC7420BBE1B /* Debug */ = {
+		314A3669E652784A4DC57C6EF7308CC6 /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = D5542D14F85B77DEABC6917596225351 /* PushApp-IOS.debug.xcconfig */;
+			baseConfigurationReference = EBBD4355D0DE69E6F5A4DC6359FEBFA7 /* PushApp-IOS.release.xcconfig */;
 			buildSettings = {
 				CLANG_ENABLE_OBJC_WEAK = NO;
 				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
@@ -547,7 +520,7 @@
 				GENERATE_INFOPLIST_FILE = NO;
 				INFOPLIST_FILE = "Target Support Files/PushApp-IOS/PushApp-IOS-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -560,12 +533,13 @@
 				SKIP_INSTALL = YES;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
 				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Debug;
+			name = Release;
 		};
 		7EE7A78859F657F6BEFC651185B43192 /* Release */ = {
 			isa = XCBuildConfiguration;
@@ -629,49 +603,9 @@
 			};
 			name = Release;
 		};
-		84851C787655013490E25F753FE25BAD /* Release */ = {
+		87B68CB08460578DE9D7506828034DDB /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 3D7B06B906F101C405E8AA069970FC32 /* PushApp-IOS.release.xcconfig */;
-			buildSettings = {
-				CLANG_ENABLE_OBJC_WEAK = NO;
-				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
-				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
-				CURRENT_PROJECT_VERSION = 1;
-				DEFINES_MODULE = YES;
-				DYLIB_COMPATIBILITY_VERSION = 1;
-				DYLIB_CURRENT_VERSION = 1;
-				DYLIB_INSTALL_NAME_BASE = "@rpath";
-				ENABLE_MODULE_VERIFIER = NO;
-				ENABLE_USER_SCRIPT_SANDBOXING = NO;
-				GCC_PREFIX_HEADER = "Target Support Files/PushApp-IOS/PushApp-IOS-prefix.pch";
-				GENERATE_INFOPLIST_FILE = NO;
-				INFOPLIST_FILE = "Target Support Files/PushApp-IOS/PushApp-IOS-Info.plist";
-				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@loader_path/Frameworks",
-				);
-				MODULEMAP_FILE = "Target Support Files/PushApp-IOS/PushApp-IOS.modulemap";
-				PRODUCT_MODULE_NAME = PushApp_IOS;
-				PRODUCT_NAME = PushApp_IOS;
-				SDKROOT = iphoneos;
-				SKIP_INSTALL = YES;
-				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
-				SWIFT_INSTALL_OBJC_HEADER = YES;
-				SWIFT_VERSION = 4.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
-				VERSIONING_SYSTEM = "apple-generic";
-				VERSION_INFO_PREFIX = "";
-			};
-			name = Release;
-		};
-		A95832E9D24DAE10DF830477D2BBEBD4 /* Release */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 6837E0471FE3E713FAA14365CE90816E /* Pods-PushApp-IOS_Example.release.xcconfig */;
+			baseConfigurationReference = 8EB97634509873DBD5FBD939841FEFD0 /* Pods-PushApp-IOS_Example.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = NO;
 				CLANG_ENABLE_OBJC_WEAK = NO;
@@ -687,7 +621,7 @@
 				ENABLE_USER_SCRIPT_SANDBOXING = NO;
 				INFOPLIST_FILE = "Target Support Files/Pods-PushApp-IOS_Example/Pods-PushApp-IOS_Example-Info.plist";
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
-				IPHONEOS_DEPLOYMENT_TARGET = 15.6;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -703,11 +637,10 @@
 				SDKROOT = iphoneos;
 				SKIP_INSTALL = YES;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
 				VERSION_INFO_PREFIX = "";
 			};
-			name = Release;
+			name = Debug;
 		};
 		D299434AB35E7FD6F7921C8EF24742FF /* Debug */ = {
 			isa = XCBuildConfiguration;
@@ -775,14 +708,132 @@
 			};
 			name = Debug;
 		};
+		D5A3F85994ABE2A329DB30C07024DEAB /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 242156557544398519F11630FAAA487E /* EasyTipView.release.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/EasyTipView/EasyTipView-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/EasyTipView/EasyTipView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/EasyTipView/EasyTipView.modulemap";
+				PRODUCT_MODULE_NAME = EasyTipView;
+				PRODUCT_NAME = EasyTipView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		DFDDC270EF683D652BBA32253B7B7A22 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4B052918CCC38747478E8D8CC9A9775D /* PushApp-IOS.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/PushApp-IOS/PushApp-IOS-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/PushApp-IOS/PushApp-IOS-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/PushApp-IOS/PushApp-IOS.modulemap";
+				PRODUCT_MODULE_NAME = PushApp_IOS;
+				PRODUCT_NAME = PushApp_IOS;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E299A78ABD43CE0D05B01B37F74146A7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A86C2A2C79B6B30DC1204A0FE6C561F4 /* EasyTipView.debug.xcconfig */;
+			buildSettings = {
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_MODULE_VERIFIER = NO;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_PREFIX_HEADER = "Target Support Files/EasyTipView/EasyTipView-prefix.pch";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = "Target Support Files/EasyTipView/EasyTipView-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MODULEMAP_FILE = "Target Support Files/EasyTipView/EasyTipView.modulemap";
+				PRODUCT_MODULE_NAME = EasyTipView;
+				PRODUCT_NAME = EasyTipView;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		39CD9CD333AE7A6F93846F1B5A1DF3FD /* Build configuration list for PBXNativeTarget "PushApp-IOS" */ = {
+		1A68D669427180C7FCF095B2445D44BA /* Build configuration list for PBXNativeTarget "Pods-PushApp-IOS_Example" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				6140B623BE0BCCBBD9F9ACC7420BBE1B /* Debug */,
-				84851C787655013490E25F753FE25BAD /* Release */,
+				87B68CB08460578DE9D7506828034DDB /* Debug */,
+				1C030233DBD780CB9AF264E726C24B36 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -796,20 +847,20 @@
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		7F159596A643B3574C2F56ABA5E4E2AF /* Build configuration list for PBXNativeTarget "Pods-PushApp-IOS_Example" */ = {
+		E756F27CD6E864341BB4EFDF6E172742 /* Build configuration list for PBXNativeTarget "PushApp-IOS" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				33F0A68ACE3DB62045301AFB798CD35C /* Debug */,
-				A95832E9D24DAE10DF830477D2BBEBD4 /* Release */,
+				DFDDC270EF683D652BBA32253B7B7A22 /* Debug */,
+				314A3669E652784A4DC57C6EF7308CC6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		F73125721323CFEF7A1406ACB2B7E19A /* Build configuration list for PBXNativeTarget "Pods-PushApp-IOS_Tests" */ = {
+		F90EBFD563937CF5A21E78EEE92BBDC1 /* Build configuration list for PBXNativeTarget "EasyTipView" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1EA14869FF82EACC9B802E06A8E72907 /* Debug */,
-				199E391BF64BF631887293B3E6CFFFAD /* Release */,
+				E299A78ABD43CE0D05B01B37F74146A7 /* Debug */,
+				D5A3F85994ABE2A329DB30C07024DEAB /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

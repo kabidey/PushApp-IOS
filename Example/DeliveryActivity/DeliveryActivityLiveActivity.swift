@@ -55,43 +55,70 @@ struct DeliveryActivityLiveActivity: Widget {
                     let _ = print("🎨 message1 bold: \(context.state.line1_font_text_styles.contains("bold"))")
                     let _ = print("🎨 message1 italic: \(context.state.line1_font_text_styles.contains("italic"))")
                     
-                    Text(context.state.message1)
-                        .font(.system(size: context.state.message1FontSize, weight: context.state.line1_font_text_styles.contains("bold") ? .bold : .regular, design: context.state.line1_font_text_styles.contains("italic") ? .serif : .default))
-                        .foregroundColor(colorFromHex(context.state.message1FontColorHex))
-                        .modifier(TextStyleModifier(styles: context.state.line1_font_text_styles))
+                    if context.state.line1_font_text_styles.contains("italic"){
+                        Text(context.state.message1)
+                            .font(.system(size: context.state.message1FontSize, weight: context.state.line1_font_text_styles.contains("bold") ? .bold : .regular))
+                            .foregroundColor(colorFromHex(context.state.message1FontColorHex))
+                            .modifier(TextStyleModifier(styles: context.state.line1_font_text_styles)).italic()
+                    }else{
+                        
+                        Text(context.state.message1)
+                            .font(.system(size: context.state.message1FontSize, weight: context.state.line1_font_text_styles.contains("bold") ? .bold : .regular))
+                            .foregroundColor(colorFromHex(context.state.message1FontColorHex))
+                            .modifier(TextStyleModifier(styles: context.state.line1_font_text_styles))
+                    }
 
                     let _ = print("🎨 Applying styles to message2: \(context.state.line2_font_text_styles)")
-                    Text(context.state.message2)
-                        .font(.system(size: context.state.message2FontSize, weight: context.state.line2_font_text_styles.contains("bold") ? .bold : .regular, design: context.state.line2_font_text_styles.contains("italic") ? .serif : .default))
-                        .foregroundColor(colorFromHex(context.state.message2FontColorHex))
-                        .modifier(TextStyleModifier(styles: context.state.line2_font_text_styles))
+                    if context.state.line2_font_text_styles.contains("italic"){
+                        Text(context.state.message2)
+                            .font(.system(size: context.state.message2FontSize, weight: context.state.line2_font_text_styles.contains("bold") ? .bold : .regular))
+                            .foregroundColor(colorFromHex(context.state.message2FontColorHex))
+                            .modifier(TextStyleModifier(styles: context.state.line2_font_text_styles)).italic()
+                    }else{
+                        
+                        Text(context.state.message2)
+                            .font(.system(size: context.state.message2FontSize, weight: context.state.line2_font_text_styles.contains("bold") ? .bold : .regular))
+                            .foregroundColor(colorFromHex(context.state.message2FontColorHex))
+                            .modifier(TextStyleModifier(styles: context.state.line2_font_text_styles))
+                    }
 
                     let _ = print("🎨 Applying styles to message3: \(context.state.line3_font_text_styles)")
-                    Text(context.state.message3)
-                        .font(.system(size: context.state.message3FontSize, weight: context.state.line3_font_text_styles.contains("bold") ? .bold : .regular, design: context.state.line3_font_text_styles.contains("italic") ? .serif : .default))
-                        .foregroundColor(colorFromHex(context.state.message3FontColorHex))
-                        .modifier(TextStyleModifier(styles: context.state.line3_font_text_styles))
+                    if context.state.line3_font_text_styles.contains("italic"){
+                        Text(context.state.message3)
+                            .font(.system(size: context.state.message3FontSize, weight: context.state.line3_font_text_styles.contains("bold") ? .bold : .regular))
+                            .foregroundColor(colorFromHex(context.state.message3FontColorHex))
+                            .modifier(TextStyleModifier(styles: context.state.line3_font_text_styles)).italic()
+                    }else{
+                        
+                        Text(context.state.message3)
+                            .font(.system(size: context.state.message3FontSize, weight: context.state.line3_font_text_styles.contains("bold") ? .bold : .regular))
+                            .foregroundColor(colorFromHex(context.state.message3FontColorHex))
+                            .modifier(TextStyleModifier(styles: context.state.line3_font_text_styles))
+                    }
 
-                    ProgressView(value: context.state.progressPercent)
-                        .progressViewStyle(LinearProgressViewStyle(tint: colorFromHex(context.state.progressColorHex)))
+                    GeometryReader { geometry in
+                            ZStack(alignment: .leading) {
+                                Capsule()
+                                    .fill(Color.gray.opacity(0.2))
+                                    .frame(height: 6)
+                                Capsule()
+                                    .fill(colorFromHex(context.state.progressColorHex))
+                                    .frame(width: geometry.size.width * CGFloat(context.state.progressPercent), height: 6)
+                            }
+                        }
                         .frame(height: 6)
-                        .clipShape(Capsule())
                 }
 
                 Spacer()
                 
-                if let imageFileName = context.state.imageFileName,
-                               let containerURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.mehery.ios.sdk") {
-                                let imageURL = containerURL.appendingPathComponent(imageFileName)
-                                if let uiImage = UIImage(contentsOfFile: imageURL.path) {
-                                    Image(uiImage: uiImage)
-                                        .resizable()
-                                        .scaledToFit()
-                                        .frame(height: 100)
-                                } else {
-                                    Text("Image not found")
-                                }
-                            }
+                if let avatar = loadImageFromAppGroup(named: context.state.imageFileName ?? "") {
+                    avatar
+                        .resizable()
+                        .scaledToFill()
+                        .frame(width: 100, height: 60) // rectangle frame
+                        .clipped() // prevent overflow
+                }
+
             }
             .padding()
             .background(
@@ -140,6 +167,30 @@ struct DeliveryActivityLiveActivity: Widget {
     }
 }
 
+func loadImageFromAppGroup(named name: String) -> Image? {
+    guard let containerURL = FileManager.default.containerURL(forSecurityApplicationGroupIdentifier: "group.com.mehery.ios.sdk") else {
+        print("❌ App Group container not found")
+        return nil
+    }
+    
+    let fileURL = containerURL.appendingPathComponent(name)
+    print("📂 Looking for image at path: \(fileURL.path)")
+    
+    guard FileManager.default.fileExists(atPath: fileURL.path) else {
+        print("❌ File does not exist at path: \(fileURL.path)")
+        return nil
+    }
+    
+    guard let uiImage = UIImage(contentsOfFile: fileURL.path) else {
+        print("❌ Failed to load UIImage from file: \(fileURL.path)")
+        return nil
+    }
+    
+    print("✅ Successfully loaded image: \(name)")
+    return Image(uiImage: uiImage)
+}
+
+
 
 private func backgroundView(for state: DeliveryActivityAttributes.ContentState) -> some View {
     if !state.bg_color_gradient.isEmpty, !state.bg_color_gradient_dir.isEmpty {
@@ -161,14 +212,23 @@ private func backgroundView(for state: DeliveryActivityAttributes.ContentState) 
 
 private func gradientDirection(from dir: String) -> (UnitPoint, UnitPoint) {
     switch dir.lowercased() {
+    case "toleft", "left":
+        return (.trailing, .leading)      // Gradient moves from right to left
+    case "toright", "right":
+        return (.leading, .trailing)      // Gradient moves from left to right
+    case "totop", "top":
+        return (.bottom, .top)            // Gradient moves from bottom to top
+    case "tobottom", "bottom":
+        return (.top, .bottom)            // Gradient moves from top to bottom
     case "horizontal":
-        return (.leading, .trailing)
+        return (.leading, .trailing)      // Left → Right
     case "vertical":
-        return (.top, .bottom)
+        return (.top, .bottom)            // Top → Bottom
     default:
-        return (.top, .bottom) // Default to vertical
+        return (.top, .bottom)            // Default vertical
     }
 }
+
 
 // MARK: - Text Style Modifier
 
@@ -220,7 +280,7 @@ extension DeliveryActivityAttributes.ContentState {
             message1: "Blinkit",
             message2: "Your order is on its way",
             message3: "Expect delivery soon",
-            message1FontSize: 18,
+            message1FontSize: 20,
             message1FontColorHex: "#FFFFFF",
             line1_font_text_styles: ["bold"],
             message2FontSize: 16,
@@ -229,14 +289,15 @@ extension DeliveryActivityAttributes.ContentState {
             message3FontSize: 14,
             message3FontColorHex: "#00FF00",
             line3_font_text_styles: ["underline"],
-            backgroundColorHex: "#000000",
+            backgroundColorHex: "#FFFFFF",
             fontColorHex: "#FFFFFF",
             progressColorHex: "#FFFFFF",
             fontSize: 14,
-            progressPercent: 0.2,// 50% progress
-            align: "left", bg_color_gradient: "#080000",
-            bg_color_gradient_dir: "horizontal"
-//            imageFileName: "https://iconsofindianbusiness.com/files/download_(19).png" // Preview image URL
+            progressPercent: 0.5,// 50% progress
+            align: "left",
+            bg_color_gradient: "#080000",
+            bg_color_gradient_dir: "toRight",
+            imageFileName: nil // Preview image URL
         )
     }
 }
